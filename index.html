@@ -17,7 +17,7 @@
       // Slideshow 1
       $("#slides").responsiveSlides({ maxwidth:593 });
 
-      
+
     });
   </script>
   <link rel="stylesheet" type="text/css" href="cssstyles.css" />
@@ -41,7 +41,7 @@
     <div class="nav_but"><a href="renovation.html">Renovation</a></div>
     <div class="nav_but"><a href="directions.html">Directions</a></div>
     <div class="nav_but"><a href="contactus.html">Contact Us</a></div>
-    
+
      <div class="image"><a href="https://www.facebook.com/pages/Sudz-In-A-Bucket-Car-Wash/161962157245844" target="_blank"><img src="images/facebook-icon.png" border="0" /></a></div>
   </div>
   <!---------end nav---->
@@ -56,26 +56,26 @@
       <span class="button prevButton"></span>
       <span class="button nextButton"></span>
 </div>
-  
+
 </div>
-  
+
   <div class="rightnav">
     <div class="image2"><a href="ecofriendly.html"><img src="images/right_banner1.png" alt="Eco friendly" border="0" /></a></div>
     <div class="image2"><a href="carwash.html"><img src="images/right_banner2.png" alt="Car Wash" border="0" /></a></div>
     <div class="image2"><a href="detailing.html"><img src="images/right_banner3.png" alt="Detailing" border="0" /></a></div>
   </div>
-  
+
   <div class="homebottom">
-    <div class="image2"><img src="images/home_banner1.png" width="303" height="198" /></div>
-    <div class="image2"><img src="images/home_banner2.png" /></div>
-    <div class="image2"><img src="images/home_banner3.png" /></div>
+    <div class="image2"><img src="images/home_banner1.png" width="303" height="198" /><div id="basicwash"></div></div>
+    <div class="image2"><img src="images/home_banner2.png" /><div id="soapywash"></div></div>
+    <div class="image2"><img src="images/home_banner3.png" /><div id="superwash"></div></div>
   </div>
-  
-  
-  
+
+
+
   <div class="footer">
     <div class="nav2">
-       
+
       <div class="nav_but2"><a href="aboutsudz.html">About </a></div>
     <div class="nav_but2"><a href="carwash.html">Car Wash</a></div>
     <div class="nav_but2"><a href="detailing.html">Detailing</a></div>
@@ -83,7 +83,7 @@
     <div class="nav_but2"><a href="renovation.html">Renovation</a></div>
     <div class="nav_but2"><a href="directions.html">Directions</a></div>
     <div class="nav_but2"><a href="contactus.html">Contact</a></div>
-    
+
     </div>
     <div class="copy">
       © SUDZ IN A BUCKET CAR WASH. All Rights Reserved.
@@ -122,15 +122,15 @@ $(window).load(function(){
 				else
 					current=current+1;
 			}
-			nextPage = pages.eq(current);	
+			nextPage = pages.eq(current);
 			currentPage.fadeTo('slow',0.3,function(){
 				nextPage.fadeIn('slow',function(){
 					nextPage.css("opacity",1);
 					currentPage.hide();
 					currentPage.css("opacity",1);
 					$('#container .button').bind('click',handler1);
-				});	
-			});			
+				});
+			});
 		}
 
 		var handler2=function(){
@@ -142,17 +142,17 @@ $(window).load(function(){
 				current=0;
 			else
 				current=current+1;
-			nextPage = pages.eq(current);	
+			nextPage = pages.eq(current);
 			currentPage.fadeTo('slow',0.3,function(){
 				nextPage.fadeIn('slow',function(){
 					nextPage.css("opacity",1);
 					currentPage.hide();
 					currentPage.css("opacity",1);
-					$('#container .button').bind('click',handler1);				
-				});	
+					$('#container .button').bind('click',handler1);
+				});
 			});
 			timeoutID=setTimeout(function(){
-				handler2();	
+				handler2();
 			}, 4000);
 			}
 		}
@@ -163,9 +163,9 @@ $(window).load(function(){
 		});
 
 		timeoutID=setTimeout(function(){
-			handler2();	
+			handler2();
 			}, 4000);
-		
+
 });
 
 </script>
