@@ -343,41 +343,35 @@ form#contact_form .p3 {
 	position:absolute;
 	font-size: 45px;
 	font-weight: bold;
-	left:1018px;
 	top:710px;
 }
 #soapywash_right {
 	position:absolute;
 	font-size: 45px;
 	font-weight: bold;
-	left:998px;
 	top:610px;
 }
 #superwash_right {
 	position:absolute;
 	font-size: 45px;
 	font-weight: bold;
-	left:998px;
 	top:505px;
 }
 #basicwash {
 	position:absolute;
 	font-size: 50px;
 	font-weight: bold;
-	left:430px;
 	top:509px;
 }
 #soapywash {
 	position:absolute;
 	font-size: 50px;
 	font-weight: bold;
-	left:707px;
 	top:509px;
 }
 #superwash {
 	position:absolute;
 	font-size: 50px;
 	font-weight: bold;
-	left:990px;
 	top:509px;
 }
