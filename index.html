@@ -1,0 +1,173 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>SUDZ IN A BUCKET - CAR WASH AND DETAIL CENTER - Souderton, PA</title>
+<style type="text/css">
+<!--
+
+-->
+</style>
+<link href="style.css" rel="stylesheet" type="text/css" />
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+  <script src="responsiveslides.min.js"></script>
+  <script>
+    jQuery(function() {
+
+      // Slideshow 1
+      $("#slides").responsiveSlides({ maxwidth:593 });
+
+      
+    });
+  </script>
+  <link rel="stylesheet" type="text/css" href="cssstyles.css" />
+</head>
+
+<body>
+<div class="wrapper">
+  <div class="header">
+    <div class="address">24 N. County Line Rd.<br />
+      Souderton PA, 18964<br />
+      215-723-3460<br />
+    info@sudzguy.com</div>
+  </div>
+  <!---------end header---->
+  <div class="nav">
+    <div class="active">Home</div>
+    <div class="nav_but"><a href="aboutsudz.html">About Sudz </a></div>
+    <div class="nav_but"><a href="carwash.html">Car Wash</a></div>
+    <div class="nav_but"><a href="detailing.html">Detailing</a></div>
+    <div class="nav_but"><a href="specials.html">Specials</a></div>
+    <div class="nav_but"><a href="renovation.html">Renovation</a></div>
+    <div class="nav_but"><a href="directions.html">Directions</a></div>
+    <div class="nav_but"><a href="contactus.html">Contact Us</a></div>
+    
+     <div class="image"><a href="https://www.facebook.com/pages/Sudz-In-A-Bucket-Car-Wash/161962157245844" target="_blank"><img src="images/facebook-icon.png" border="0" /></a></div>
+  </div>
+  <!---------end nav---->
+  <div class="image2">
+  <div id="container">
+	<ul>
+      	<li><img src="images/home_img.png" alt="Car wash" width="593" height="313" /></li>
+            <li><img src="images/home_img2.png" alt="Car wash" width="593" height="313" /></li>
+            <li><img src="images/home_img3.png" alt="Car wash" width="593" height="313" /></li>
+            <li><img src="images/home_img4.png" alt="Car wash" width="593" height="313" /></li>
+                  </ul>
+      <span class="button prevButton"></span>
+      <span class="button nextButton"></span>
+</div>
+  
+</div>
+  
+  <div class="rightnav">
+    <div class="image2"><a href="ecofriendly.html"><img src="images/right_banner1.png" alt="Eco friendly" border="0" /></a></div>
+    <div class="image2"><a href="carwash.html"><img src="images/right_banner2.png" alt="Car Wash" border="0" /></a></div>
+    <div class="image2"><a href="detailing.html"><img src="images/right_banner3.png" alt="Detailing" border="0" /></a></div>
+  </div>
+  
+  <div class="homebottom">
+    <div class="image2"><img src="images/home_banner1.png" width="303" height="198" /></div>
+    <div class="image2"><img src="images/home_banner2.png" /></div>
+    <div class="image2"><img src="images/home_banner3.png" /></div>
+  </div>
+  
+  
+  
+  <div class="footer">
+    <div class="nav2">
+       
+      <div class="nav_but2"><a href="aboutsudz.html">About </a></div>
+    <div class="nav_but2"><a href="carwash.html">Car Wash</a></div>
+    <div class="nav_but2"><a href="detailing.html">Detailing</a></div>
+    <div class="nav_but2"><a href="specials.html">Specials</a></div>
+    <div class="nav_but2"><a href="renovation.html">Renovation</a></div>
+    <div class="nav_but2"><a href="directions.html">Directions</a></div>
+    <div class="nav_but2"><a href="contactus.html">Contact</a></div>
+    
+    </div>
+    <div class="copy">
+      © SUDZ IN A BUCKET CAR WASH. All Rights Reserved.
+    </div>
+    <div class="copy2">
+     24 N. County Line Rd. - Souderton PA, 18964
+    </a></div>
+  </div>
+</div>
+<!---------end wrapper---->
+<script src="../jquery-1.4.2.min.js"></script>
+
+<script>
+$(window).load(function(){
+		var pages = $('#container li'), current=0;
+		var currentPage,nextPage;
+		var timeoutID;
+		var buttonClicked=0;
+
+		var handler1=function(){
+			buttonClicked=1;
+			$('#container .button').unbind('click');
+			currentPage= pages.eq(current);
+			if($(this).hasClass('prevButton'))
+			{
+				if (current <= 0)
+					current=pages.length-1;
+					else
+					current=current-1;
+			}
+			else
+			{
+
+				if (current >= pages.length-1)
+					current=0;
+				else
+					current=current+1;
+			}
+			nextPage = pages.eq(current);	
+			currentPage.fadeTo('slow',0.3,function(){
+				nextPage.fadeIn('slow',function(){
+					nextPage.css("opacity",1);
+					currentPage.hide();
+					currentPage.css("opacity",1);
+					$('#container .button').bind('click',handler1);
+				});	
+			});			
+		}
+
+		var handler2=function(){
+			if (buttonClicked==0)
+			{
+			$('#container .button').unbind('click');
+			currentPage= pages.eq(current);
+			if (current >= pages.length-1)
+				current=0;
+			else
+				current=current+1;
+			nextPage = pages.eq(current);	
+			currentPage.fadeTo('slow',0.3,function(){
+				nextPage.fadeIn('slow',function(){
+					nextPage.css("opacity",1);
+					currentPage.hide();
+					currentPage.css("opacity",1);
+					$('#container .button').bind('click',handler1);				
+				});	
+			});
+			timeoutID=setTimeout(function(){
+				handler2();	
+			}, 4000);
+			}
+		}
+
+		$('#container .button').click(function(){
+			clearTimeout(timeoutID);
+			handler1();
+		});
+
+		timeoutID=setTimeout(function(){
+			handler2();	
+			}, 4000);
+		
+});
+
+</script>
+</body>
+</html>
