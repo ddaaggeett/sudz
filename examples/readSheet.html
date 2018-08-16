@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+<head>
+    <title>example spreadsheet data</title>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+</head>
+<body>
+    <div id="output">
+        spreadsheet data will appear here
+    </div>
+
+    <script src="../js/spreadsheetParser.js"></script>
+    <script>
+        const output = document.getElementById('output');
+
+        const key = "1ErshNoAq3v7oaaqh-RVOn_b7jpL-s5v5-DqyRzI9dDA";
+        const sheetNum = "1";
+
+        GetSheetDone.labeledCols(key, sheetNum).then((data) => {
+            console.log('Data');
+            console.log(data);
+            output.innerHTML = JSON.stringify(data);
+        }).catch(err => {
+            console.log('Error');
+            console.log(err);
+            output.innerHTML = err.message;
+        })
+    </script>
+</body>
+</html>
