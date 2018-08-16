@@ -8,9 +8,9 @@ const sheetNum = "1";
 GetSheetDone.labeledCols(key, sheetNum).then((data) => {
     console.log('Data');
     console.log(data);
-    basicwash.innerHTML = data.data[0].washbucket;
-    soapywash.innerHTML = data.data[0].soapywashbucket;
-    superwash.innerHTML = data.data[0].supersudzbucket;
+    basicwash.innerHTML = "$" + data.data[0].washbucket;
+    soapywash.innerHTML = "$" + data.data[0].soapywashbucket;
+    superwash.innerHTML = "$" + data.data[0].supersudzbucket;
 }).catch(err => {
     console.log('Error');
     console.log(err);
