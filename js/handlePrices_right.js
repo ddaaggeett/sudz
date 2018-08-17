@@ -15,4 +15,6 @@ GetSheetDone.labeledCols(key, sheetNum).then((data) => {
     console.log('Error');
     console.log(err);
     basicwash.innerHTML = err.message;
+    soapywash.innerHTML = err.message;
+    superwash.innerHTML = err.message;
 })
