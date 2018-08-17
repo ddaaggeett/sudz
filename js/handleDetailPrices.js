@@ -5,8 +5,8 @@ const detail_medium_tax = document.getElementById('detail_medium_tax');
 const detail_large = document.getElementById('detail_large');
 const detail_large_tax = document.getElementById('detail_large_tax');
 
-const key = "1ErshNoAq3v7oaaqh-RVOn_b7jpL-s5v5-DqyRzI9dDA";
-const sheetNum = "1";
+// const key = "1ErshNoAq3v7oaaqh-RVOn_b7jpL-s5v5-DqyRzI9dDA"; // already declared in handleDetailPrices.js
+// const sheetNum = "1";
 
 GetSheetDone.labeledCols(key, sheetNum).then((data) => {
     console.log('Data');
