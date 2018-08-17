@@ -1,6 +1,3 @@
-const basicwash = document.getElementById('basicwash_right');
-const soapywash = document.getElementById('soapywash_right');
-const superwash = document.getElementById('superwash_right');
 const detail_small = document.getElementById('detail_small');
 const detail_small_tax = document.getElementById('detail_small_tax');
 const detail_medium = document.getElementById('detail_medium');
@@ -14,9 +11,6 @@ const sheetNum = "1";
 GetSheetDone.labeledCols(key, sheetNum).then((data) => {
     console.log('Data');
     console.log(data);
-    basicwash.innerHTML = "$" + data.data[0].washbucket;
-    soapywash.innerHTML = "$" + data.data[0].soapywashbucket;
-    superwash.innerHTML = "$" + data.data[0].supersudzbucket;
     const small = data.data[0].detailsmall;
     const medium = data.data[0].detailmedium;
     const large = data.data[0].detaillarge;
@@ -29,7 +23,10 @@ GetSheetDone.labeledCols(key, sheetNum).then((data) => {
 }).catch(err => {
     console.log('Error');
     console.log(err);
-    basicwash.innerHTML = err.message;
-    soapywash.innerHTML = err.message;
-    superwash.innerHTML = err.message;
+    detail_small.innerHTML = err.message;
+    detail_small_tax.innerHTML = err.message;
+    detail_medium.innerHTML = err.message;
+    detail_medium_tax.innerHTML = err.message;
+    detail_large.innerHTML = err.message;
+    detail_large_tax.innerHTML = err.message;
 })
