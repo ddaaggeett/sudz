@@ -52,56 +52,41 @@
       <p><span class="style1">Questions or Comments?  We would love to hear from you.</span><br />
         <div id="contactForm">
 
+	  <form action="https://formspree.io/sudzinabucket@gmail.com" method="POST" name="contact_form" target="_top" id="contact_form">
 
-      <form action="process.php" method="post" name="contact_form" target="_top" id="contact_form">
+	  <div class="name">
+	  <div class="p2">
+	  <input type="text" placeholder="your name" name="name" id="name" value="" tabindex="1" />
+	  </div>
+	  </div>
 
-        <div class="name">
-        <div class="p1">
-          <label for="name"> Name:</label>
-          </div>
-          <div class="p2">
-          <input type="text" name="name" id="name" value="" tabindex="1" />
-          </div>
-          </div>
+	  <div class="name">
+	  <div class="p1">
+	  </div>
+	  <div class="p2">
+	  <input type="text" placeholder="your phone" name="phone" cols="35" id="phone" value="" tabindex="2" />
+	  </div>
+	  </div>
 
-        <div class="name">
-        <div class="p1">
-          <label for="name">Phone:</label>
-        </div>
-          <div class="p2">
-          <input type="text" name="phone" id="phone" value="" tabindex="2" />
-          </div>
-          </div>
+	  <div class="name"></div>
+	  <div class="name">
+	  <div class="p2">
+	  <input type="text" name="_replyto" cols="35" id="email" value="" tabindex="4" placeholder="your email" />
+	  </div>
+	  </div>
 
-        <div class="name"></div>
+		<div class="message">
+		   <div class="p2">
+		   <textarea placeholder="your message" cols="35" rows="3" name="message" id="message"></textarea>
+		</div>
+		</div>
 
-           <div class="name">
-        <div class="p1">
-          <label for="name">Email:</label>
-        </div>
-          <div class="p2">
-          <input type="text" name="email" id="email" value="" tabindex="4" />
-          </div>
-          </div>
-
-        <div class="message">
-        <div class="p1">
-          <label for="message">Comments:</label>
-          </div>
-           <div class="p2">
-          <textarea cols="35" rows="3" name="message" id="message"></textarea>
-      </div>
-        </div>
-
-
-
-        <div class="blankSeparator3"><!-- --></div>
-        <div class="p3">
-        <div id="loader">
-          <input type="image" src="images/submit.png" border="0" alt="Submit Form" />
-
-        </div>
-       </div>
+		<div class="blankSeparator3"><!-- --></div>
+		<div class="p3">
+		<div id="loader">
+		<input type="image" src="images/submit.png" border="0" alt="Submit Form" />
+		</div>
+		</div>
       </form>
     </div>
     </div>
